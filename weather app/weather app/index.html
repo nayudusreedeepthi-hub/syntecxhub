@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="login-container" class="card">
+        <h2>Weather App Login</h2>
+
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+
+        <button onclick="login()">Login</button>
+    </div>
+
+    <div id="weather-container" class="card" style="display:none;">
+
+        <div class="top-bar">
+            <h3>Welcome, <span id="userName"></span> 👋</h3>
+            <button onclick="logout()">Logout</button>
+        </div>
+
+        <h1>🌤 Weather App</h1>
+
+        <input type="text" id="city" placeholder="Enter City">
+
+        <button onclick="getWeather()">Search Weather</button>
+
+        <div id="weatherResult"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Expense Tracker Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Login Form -->
+    <div class="container" id="loginBox">
+        <h2>Login</h2>
+
+        <input type="text" id="username" placeholder="Enter Username">
+
+        <input type="password" id="password" placeholder="Enter Password">
+
+        <button onclick="login()">Login</button>
+    </div>
+
+    <!-- Expense Tracker -->
+    <div class="container hidden" id="expenseBox">
+
+        <h2>Welcome, <span id="user"></span> 👋</h2>
+
+        <button onclick="logout()">Logout</button>
+
+        <hr>
+
+        <input type="text" id="expenseName" placeholder="Expense Name">
+
+        <input type="number" id="expenseAmount" placeholder="Amount">
+
+        <button onclick="addExpense()">Add Expense</button>
+
+        <h3>Total: ₹<span id="total">0</span></h3>
+
+        <ul id="expenseList"></ul>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
